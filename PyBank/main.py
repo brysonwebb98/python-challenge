@@ -50,7 +50,7 @@ print(f"Average Change : ${round((list_profit_loss[len(list_profit_loss) - 1] - 
 print(f"Greatest Increase in Profits: {g_month} (${greatest})")
 print(f"Greatest Decrease in Profits: {s_month} (${smallest})")
 
-output_path = os.path.join("PyBank/Analysis/analysis.csv")
+output_path = os.path.join("PyBank/Analysis/analysis.txt")
 
 with open(output_path, 'w') as output_file:
     output_file.write("                           \n")

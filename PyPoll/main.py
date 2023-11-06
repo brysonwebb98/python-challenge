@@ -50,7 +50,7 @@ print("-----------------------")
 print(f"Winner: {winner}")
 print("-----------------------")
 
-output_path = os.path.join("PyPoll/Analysis/new.csv")
+output_path = os.path.join("PyPoll/Analysis/analysis.txt")
 
 with open(output_path, 'w') as output_file:
     output_file.write("                       \n")
