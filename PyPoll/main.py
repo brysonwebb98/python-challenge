@@ -49,3 +49,18 @@ print(f"{candidates_names[2]} {percentage3}% ({candidate_3_votes})")
 print("-----------------------")
 print(f"Winner: {winner}")
 print("-----------------------")
+
+output_path = os.path.join("PyPoll/Analysis/new.csv")
+
+with open(output_path, 'w') as output_file:
+    output_file.write("                       \n")
+    output_file.write("Election Results\n")
+    output_file.write("-----------------------\n")
+    output_file.write(f"Total Votes: {total_votes}\n")
+    output_file.write("-----------------------\n")
+    output_file.write(f"{candidates_names[0]} {percentage1}% ({candidate_1_votes})\n")
+    output_file.write(f"{candidates_names[1]} {percentage2}% ({candidate_2_votes})\n")
+    output_file.write(f"{candidates_names[2]} {percentage3}% ({candidate_3_votes})\n")
+    output_file.write("-----------------------\n")
+    output_file.write(f"Winner: {winner}\n")
+    output_file.write("-----------------------\n")

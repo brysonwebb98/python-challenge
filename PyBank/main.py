@@ -49,3 +49,15 @@ print(f"Total: ${net_total}")
 print(f"Average Change : ${round((list_profit_loss[len(list_profit_loss) - 1] - (list_profit_loss[0])) / (len(list_profit_loss)-1),2)}")
 print(f"Greatest Increase in Profits: {g_month} (${greatest})")
 print(f"Greatest Decrease in Profits: {s_month} (${smallest})")
+
+output_path = os.path.join("PyBank/Analysis/analysis.csv")
+
+with open(output_path, 'w') as output_file:
+    output_file.write("                           \n")
+    output_file.write("Financial Analysis\n")
+    output_file.write("----------------------------\n")
+    output_file.write(f"Total Months: {total_months}\n")
+    output_file.write(f"Total: ${net_total}\n")
+    output_file.write(f"Average Change : ${round((list_profit_loss[len(list_profit_loss) - 1] - (list_profit_loss[0])) / (len(list_profit_loss)-1),2)}\n")
+    output_file.write(f"Greatest Increase in Profits: {g_month} (${greatest})\n")
+    output_file.write(f"Greatest Decrease in Profits: {s_month} (${smallest})\n")
