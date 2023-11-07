@@ -1,7 +1,7 @@
 import os
 import csv
 
-budget_file = os.path.join("PyBank/Resources/budget_data.csv")
+budget_file = os.path.join("Resources/budget_data.csv")
 
 total_months = 0
 net_total = 0
@@ -50,7 +50,7 @@ print(f"Average Change : ${round((list_profit_loss[len(list_profit_loss) - 1] - 
 print(f"Greatest Increase in Profits: {g_month} (${greatest})")
 print(f"Greatest Decrease in Profits: {s_month} (${smallest})")
 
-output_path = os.path.join("PyBank/Analysis/analysis.txt")
+output_path = os.path.join("Analysis/analysis.txt")
 
 with open(output_path, 'w') as output_file:
     output_file.write("                           \n")

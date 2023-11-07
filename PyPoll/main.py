@@ -7,7 +7,7 @@ candidate_1_votes = 0
 candidate_2_votes = 0
 candidate_3_votes = 0
 
-election_file = os.path.join("PyPoll/Resources/election_data.csv")
+election_file = os.path.join("Resources/election_data.csv")
 
 with open(election_file) as file:
     csv_reader = csv.reader(file, delimiter = ",")
@@ -50,7 +50,7 @@ print("-----------------------")
 print(f"Winner: {winner}")
 print("-----------------------")
 
-output_path = os.path.join("PyPoll/Analysis/analysis.txt")
+output_path = os.path.join("Analysis/analysis.txt")
 
 with open(output_path, 'w') as output_file:
     output_file.write("                       \n")
